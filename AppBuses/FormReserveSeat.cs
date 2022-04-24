@@ -95,7 +95,7 @@ namespace AppBuses
                     BusPlate = passengerBusPlate,
                     Seat = asiento,
                     Row = rows,
-                    Colum = colums ,
+                    Colum = colums,
                 };
                 person.Add(objPerson);
                 MessageBox.Show("Asiento reservado, con numero de ticket: " + value);
@@ -111,7 +111,7 @@ namespace AppBuses
 
         private void btnListBusCapacity_Click(object sender, EventArgs e)
         {
-            // Listar reservas registrados en dataGrid1 segun el nit de la empresa
+            // Listar reservas registrados en dataGrid1
             string passengerIdentification = Interaction.InputBox("Ingrese el numero de identificación del pasajero", "Info de buses", "", -1, -1);
 
             // Limpiar lista
@@ -149,7 +149,7 @@ namespace AppBuses
 
         private void btnCancelReservation_Click(object sender, EventArgs e)
         {
-            // Eliminar Reserva ingresando el numero de ticket y nit de la empresa del bus por inputBox
+            // Eliminar Reserva ingresando el numero de ticket por inputBox
             string value = Interaction.InputBox("Ingrese el numero de ticket a eliminar", "Eliminar Reserva", "", -1, -1);
             int reservation = Int32.Parse(value);
             int index = 0;
