@@ -37,31 +37,40 @@ namespace AppBuses
             string driverName = txtDriverName.Text;
             string driverLastName = txtDriverLastName.Text;
             string driverPhone = txtDriverPhone.Text;
-
-            // Crear nuevo conductor
-            Driver objDriver = new Driver
-            {
-                Identification = driverIdentification,
-                Name = driverName,
-                LastName = driverLastName,
-                Phone = driverPhone
-            };
             bool bandera = false;
-            for (int i = 0; i < drivers.Count; i++)
+
+            // Los campos no pueden estar vacios
+            if (driverIdentification == "" || driverName == "" || driverLastName == "" || driverPhone == "")
             {
-                if (drivers[i].Identification.Equals(driverIdentification))
-                {
-                    bandera = true;
-                }
-            }
-            if (bandera)
-            {
-                MessageBox.Show("El conductor con el numero de identificación: " + driverIdentification + " ya se encuentra en el sistema");
+                MessageBox.Show("No pueden haber campos vacios");
             }
             else
             {
-                drivers.Add(objDriver);
-                MessageBox.Show("Conductor añadido correctamente");
+                // Crear nuevo conductor
+                Driver objDriver = new Driver
+                {
+                    Identification = driverIdentification,
+                    Name = driverName,
+                    LastName = driverLastName,
+                    Phone = driverPhone
+                };
+
+                for (int i = 0; i < drivers.Count; i++)
+                {
+                    if (drivers[i].Identification.Equals(driverIdentification))
+                    {
+                        bandera = true;
+                    }
+                }
+                if (bandera)
+                {
+                    MessageBox.Show("El conductor con el numero de identificación: " + driverIdentification + " ya se encuentra en el sistema");
+                }
+                else
+                {
+                    drivers.Add(objDriver);
+                    MessageBox.Show("Conductor añadido correctamente");
+                }
             }
 
             // Limpiar campos

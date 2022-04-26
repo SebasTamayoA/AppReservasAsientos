@@ -52,7 +52,7 @@ namespace AppBuses
             // Leer capacidad del bus como arreglo bidimensional del formulario con filas y columnas
             int busRows = Convert.ToInt32(txtBusRows.Text);
             int busColumns = Convert.ToInt32(txtBusColumns.Text);
-            //int[,] busCapacity = new int[busRows, busColumns];
+            Sillas = new int[busRows, busColumns];
             int busCapacity1 = busRows * busColumns;
 
             Boolean bandera = false;
@@ -116,27 +116,35 @@ namespace AppBuses
         {
             // Actualizar datos del bus tomando el número de placa y las filas y columnas
             string busPlate = txtBusPlate.Text;
-            // filas y columnas
-            int busRows = Convert.ToInt32(txtBusRows.Text);
-            int busColumns = Convert.ToInt32(txtBusColumns.Text);
-            int busCapacity1 = busRows * busColumns;
-
             bool bandera = false;
-
-            for (int i = 0; i < drivers.Count; i++)
+            if (busPlate.Equals(""))
             {
-                if (tc[i].BusPlate.Equals(busPlate))
-                {
-                    tc[i].BusType = comboBoxBusType.Text;
-                    tc[i].BusPlate = txtBusPlate.Text;
-                    tc[i].Driver = drivers[i];
-                    // falta actualizar matriz de capacidad //// 
+                MessageBox.Show("Ingrese la placa del bus");
+            }
+            else
+            {
+                // filas y columnas
+                int busRows = Convert.ToInt32(txtBusRows.Text);
+                int busColumns = Convert.ToInt32(txtBusColumns.Text);
+                int busCapacity1 = busRows * busColumns;
+                Sillas = new int[busRows, busColumns];
 
-                    tc[i].BusCapacity1 = busCapacity1;
-                    bandera = true;
-                    break;
+                for (int i = 0; i < drivers.Count; i++)
+                {
+                    if (tc[i].BusPlate.Equals(busPlate))
+                    {
+                        tc[i].BusType = comboBoxBusType.Text;
+                        tc[i].BusPlate = txtBusPlate.Text;
+                        tc[i].Driver = drivers[i];
+                        // actualizar matriz de capacidad
+                        tc[i].BusCapacity = Sillas;
+                        tc[i].BusCapacity1 = busCapacity1;
+                        bandera = true;
+                        break;
+                    }
                 }
             }
+
             if (bandera)
             {
                 MessageBox.Show("Los datos se actualizaron correctamente");
