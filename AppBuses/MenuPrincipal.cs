@@ -23,7 +23,7 @@ namespace AppBuses
             InitializeComponent();
             // centrar menuPrincipal
             this.CenterToScreen();
-            formCompany = new FormCompany("800.199.236-6", "TuristiK", "Cra 43 # 65 B 87", "3226549876");
+            formCompany = new FormCompany("800.199.236-6", "JF & Tours", "Cra 43 # 65 B 87", "3226549876");
             formDriver = new FormDriver();
             formBus = new FormBus();
             formReserveSeat = new FormReserveSeat();
@@ -49,11 +49,6 @@ namespace AppBuses
         {
             formReserveSeat.LlenarListaBuses(formBus.buses);
             formReserveSeat.Show();
-        }
-
-        private void MenuPrincipal_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

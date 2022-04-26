@@ -180,6 +180,7 @@ namespace AppBuses
                         break;
                     }
                 }
+                // Graficar sillas del bus
                 GraphicBus(index);
             }
         }

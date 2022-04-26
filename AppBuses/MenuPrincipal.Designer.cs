@@ -40,11 +40,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 33);
+            this.label1.Location = new System.Drawing.Point(94, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 25);
+            this.label1.Size = new System.Drawing.Size(283, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bienvenidos a AppBuses ";
+            this.label1.Text = "Bienvenidos a JF && Tours";
             // 
             // label2
             // 
@@ -107,7 +107,6 @@
             this.Controls.Add(this.label1);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
