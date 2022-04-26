@@ -116,9 +116,9 @@
             // 
             // txtDriverName
             // 
-            this.txtDriverName.Location = new System.Drawing.Point(219, 117);
+            this.txtDriverName.Location = new System.Drawing.Point(207, 117);
             this.txtDriverName.Name = "txtDriverName";
-            this.txtDriverName.Size = new System.Drawing.Size(137, 20);
+            this.txtDriverName.Size = new System.Drawing.Size(149, 20);
             this.txtDriverName.TabIndex = 80;
             // 
             // txtDriverIdentification
@@ -209,7 +209,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FormDriver";
             this.Text = "FormDriver";
-            this.Load += new System.EventHandler(this.FormDriver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridConductor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

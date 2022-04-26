@@ -122,7 +122,7 @@
             // btnUpdateCompany
             // 
             this.btnUpdateCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCompany.Location = new System.Drawing.Point(150, 309);
+            this.btnUpdateCompany.Location = new System.Drawing.Point(150, 317);
             this.btnUpdateCompany.Name = "btnUpdateCompany";
             this.btnUpdateCompany.Size = new System.Drawing.Size(140, 23);
             this.btnUpdateCompany.TabIndex = 77;
@@ -158,7 +158,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FormCompany";
             this.Text = "FormCompany";
-            this.Load += new System.EventHandler(this.FormCompany_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

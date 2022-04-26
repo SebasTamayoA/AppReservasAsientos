@@ -7,12 +7,12 @@ namespace AppBuses
 {
     public partial class FormDriver : Form
     {
-        // crear Lista de objetos TouristCompany
         public List<Driver> drivers = new List<Driver>();
-        //TouristCompany[] tc = new TouristCompany[100];
         public FormDriver()
         {
             InitializeComponent();
+            // centrar formulario
+            this.CenterToScreen();
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -23,13 +23,13 @@ namespace AppBuses
         // Método para limpar campos de conductor
         public void DeleteFieldsDriver()
         {
-            // borrar campos de conductor
             txtDriverIdentification.Clear();
             txtDriverName.Clear();
             txtDriverLastName.Clear();
             txtDriverPhone.Clear();
         }
 
+        // Método para agregar conductor
         private void btnAddDriver_Click(object sender, EventArgs e)
         {
             // Crear conductor ingresando atributos del conductor del formulario
@@ -42,7 +42,7 @@ namespace AppBuses
             // Los campos no pueden estar vacios
             if (driverIdentification == "" || driverName == "" || driverLastName == "" || driverPhone == "")
             {
-                MessageBox.Show("No pueden haber campos vacios");
+                MessageBox.Show("Por favor, digite información en todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -69,7 +69,7 @@ namespace AppBuses
                 else
                 {
                     drivers.Add(objDriver);
-                    MessageBox.Show("Conductor añadido correctamente");
+                    MessageBox.Show("Conductor creado correctamente");
                 }
             }
 
@@ -77,6 +77,7 @@ namespace AppBuses
             DeleteFieldsDriver();
         }
 
+        // Método para listar conductores
         private void btnDriverList_Click(object sender, EventArgs e)
         {
             // Limpiar lista
@@ -93,16 +94,17 @@ namespace AppBuses
             for (int i = 0; i < drivers.Count; i++)
             {
                 dataGridConductor.Rows.Add(drivers[i].Identification, drivers[i].Name, drivers[i].LastName, drivers[i].Phone);
-
             }
         }
 
+        // Método para actualizar conductor
         private void btnUpdateDriver_Click(object sender, EventArgs e)
         {
-            // Actualizar datos del conductor tomando el número de identificación y nit empresa
+            // Actualizar datos del conductor tomando el número de identificación
             string driverIdentification1 = txtDriverIdentification.Text;
             bool bandera = false;
 
+            // Validar que el conductor exista y actualizar datos
             for (int i = 0; i < drivers.Count; i++)
             {
                 if (drivers[i].Identification.Equals(driverIdentification1))
@@ -120,36 +122,38 @@ namespace AppBuses
             }
             else
             {
-                MessageBox.Show("No se encontro la persona con la identifiación: " + driverIdentification1);
+                MessageBox.Show("No se encontró conductor con la identificación: " + driverIdentification1);
             }
 
             // Borrar campos
             DeleteFieldsDriver();
         }
 
+        // Método para eliminar conductor
         private void btnDeleteDriver_Click(object sender, EventArgs e)
         {
             // Eliminar conductor ingresando el número de identificación por inputBox
             string driverIdentification1 = Interaction.InputBox("Ingrese el numero de identificación del conductor a eliminar", "", "", -1, -1);
-
-            // Recorrer Lista para eliminar el conductor con el número de identificación y el nit ingresado
+            bool bandera = false;
+            // Recorrer Lista para eliminar el conductor con el número de identificación
             for (int i = 0; i < drivers.Count; i++)
             {
                 if (drivers[i].Identification.Equals(driverIdentification1))
                 {
                     drivers.RemoveAt(i);
-                    MessageBox.Show("Se ha eliminado correctamente");
-                }
-                else
-                {
-                    MessageBox.Show("No se ha podido eliminar");
+                    bandera = true;
+                    break;
                 }
             }
-        }
 
-        private void FormDriver_Load(object sender, EventArgs e)
-        {
-
+            if (bandera)
+            {
+                MessageBox.Show("El conductor identificación: " + driverIdentification1 + " se eliminó correctamente");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró conductor con la identificación: " + driverIdentification1);
+            }
         }
     }
 }

@@ -7,14 +7,15 @@ namespace AppBuses
 {
     public partial class FormCompany : Form
     {
-        
+
         TouristCompany objTouristCompany = new TouristCompany();
-        //TouristCompany[] tc = new TouristCompany[100];
         public FormCompany(String nit, String nombre, String direccion
             , String telefono)
         {
             InitializeComponent();
-
+            // centrar formulario
+            this.CenterToScreen();
+            // inicializar objeto
             this.txtNit.Text = nit;
             this.txtNit.Enabled = false;
             this.txtCompanyName.Text = nombre;
@@ -27,8 +28,6 @@ namespace AppBuses
             this.Hide();
         }
 
-        
-
         // Método para limpar campos de compañía
         public void DeleteFieldsCompany()
         {
@@ -37,16 +36,8 @@ namespace AppBuses
             txtAddress.Clear();
             txtPhone.Clear();
         }
-        private void dataGridEmpresa_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
-
-        private void FormCompany_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        // Método para actualizar datos de la compañía
         private void btnUpdateCompany_Click(object sender, EventArgs e)
         {
             objTouristCompany.Address = txtAddress.Text;

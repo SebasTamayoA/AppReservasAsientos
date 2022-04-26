@@ -110,9 +110,9 @@
             "Microbús",
             "Buseta",
             "Autobús"});
-            this.comboBoxBusType.Location = new System.Drawing.Point(238, 100);
+            this.comboBoxBusType.Location = new System.Drawing.Point(270, 100);
             this.comboBoxBusType.Name = "comboBoxBusType";
-            this.comboBoxBusType.Size = new System.Drawing.Size(148, 21);
+            this.comboBoxBusType.Size = new System.Drawing.Size(116, 21);
             this.comboBoxBusType.TabIndex = 80;
             // 
             // txtBusRows
@@ -135,9 +135,9 @@
             // 
             // txtBusPlate
             // 
-            this.txtBusPlate.Location = new System.Drawing.Point(216, 66);
+            this.txtBusPlate.Location = new System.Drawing.Point(270, 66);
             this.txtBusPlate.Name = "txtBusPlate";
-            this.txtBusPlate.Size = new System.Drawing.Size(170, 20);
+            this.txtBusPlate.Size = new System.Drawing.Size(116, 20);
             this.txtBusPlate.TabIndex = 77;
             // 
             // lblBusType
@@ -146,9 +146,9 @@
             this.lblBusType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBusType.Location = new System.Drawing.Point(153, 101);
             this.lblBusType.Name = "lblBusType";
-            this.lblBusType.Size = new System.Drawing.Size(79, 16);
+            this.lblBusType.Size = new System.Drawing.Size(107, 16);
             this.lblBusType.TabIndex = 76;
-            this.lblBusType.Text = "Tipo de bus";
+            this.lblBusType.Text = "Tipo de vehículo";
             // 
             // label5
             // 
@@ -247,7 +247,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(573, 9);
+            this.label4.Location = new System.Drawing.Point(596, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(127, 16);
             this.label4.TabIndex = 95;
@@ -330,7 +330,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FormBus";
             this.Text = "FormBus";
-            this.Load += new System.EventHandler(this.FormBus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGraficaBus)).EndInit();
             this.ResumeLayout(false);

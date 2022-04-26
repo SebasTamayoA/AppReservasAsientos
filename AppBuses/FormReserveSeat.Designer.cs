@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 24);
+            this.label1.Location = new System.Drawing.Point(155, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(218, 25);
             this.label1.TabIndex = 3;
@@ -64,16 +64,16 @@
             // 
             // txtPassengerBusRowSeat
             // 
-            this.txtPassengerBusRowSeat.Location = new System.Drawing.Point(227, 216);
+            this.txtPassengerBusRowSeat.Location = new System.Drawing.Point(230, 216);
             this.txtPassengerBusRowSeat.Name = "txtPassengerBusRowSeat";
-            this.txtPassengerBusRowSeat.Size = new System.Drawing.Size(145, 20);
+            this.txtPassengerBusRowSeat.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerBusRowSeat.TabIndex = 90;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(150, 220);
+            this.label18.Location = new System.Drawing.Point(135, 220);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(58, 16);
             this.label18.TabIndex = 89;
@@ -81,16 +81,16 @@
             // 
             // txtPassengerBusPlate
             // 
-            this.txtPassengerBusPlate.Location = new System.Drawing.Point(227, 181);
+            this.txtPassengerBusPlate.Location = new System.Drawing.Point(230, 181);
             this.txtPassengerBusPlate.Name = "txtPassengerBusPlate";
-            this.txtPassengerBusPlate.Size = new System.Drawing.Size(146, 20);
+            this.txtPassengerBusPlate.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerBusPlate.TabIndex = 88;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(149, 185);
+            this.label17.Location = new System.Drawing.Point(135, 182);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(68, 16);
             this.label17.TabIndex = 87;
@@ -100,7 +100,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(150, 83);
+            this.label14.Location = new System.Drawing.Point(135, 83);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 16);
             this.label14.TabIndex = 84;
@@ -141,37 +141,37 @@
             // 
             // txtPassengerPhone
             // 
-            this.txtPassengerPhone.Location = new System.Drawing.Point(223, 141);
+            this.txtPassengerPhone.Location = new System.Drawing.Point(230, 141);
             this.txtPassengerPhone.Name = "txtPassengerPhone";
-            this.txtPassengerPhone.Size = new System.Drawing.Size(150, 20);
+            this.txtPassengerPhone.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerPhone.TabIndex = 80;
             // 
             // txtPassengerLastName
             // 
-            this.txtPassengerLastName.Location = new System.Drawing.Point(223, 112);
+            this.txtPassengerLastName.Location = new System.Drawing.Point(230, 112);
             this.txtPassengerLastName.Name = "txtPassengerLastName";
-            this.txtPassengerLastName.Size = new System.Drawing.Size(149, 20);
+            this.txtPassengerLastName.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerLastName.TabIndex = 79;
             // 
             // txtPassengerName
             // 
-            this.txtPassengerName.Location = new System.Drawing.Point(233, 79);
+            this.txtPassengerName.Location = new System.Drawing.Point(230, 79);
             this.txtPassengerName.Name = "txtPassengerName";
-            this.txtPassengerName.Size = new System.Drawing.Size(137, 20);
+            this.txtPassengerName.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerName.TabIndex = 78;
             // 
             // txtPassengerIdentification
             // 
-            this.txtPassengerIdentification.Location = new System.Drawing.Point(257, 53);
+            this.txtPassengerIdentification.Location = new System.Drawing.Point(242, 53);
             this.txtPassengerIdentification.Name = "txtPassengerIdentification";
-            this.txtPassengerIdentification.Size = new System.Drawing.Size(113, 20);
+            this.txtPassengerIdentification.Size = new System.Drawing.Size(128, 20);
             this.txtPassengerIdentification.TabIndex = 77;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(149, 142);
+            this.label11.Location = new System.Drawing.Point(135, 141);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 16);
             this.label11.TabIndex = 76;
@@ -181,7 +181,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(149, 116);
+            this.label12.Location = new System.Drawing.Point(135, 116);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 16);
             this.label12.TabIndex = 75;
@@ -191,7 +191,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(150, 54);
+            this.label13.Location = new System.Drawing.Point(135, 54);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(101, 16);
             this.label13.TabIndex = 74;
@@ -229,9 +229,9 @@
             // 
             // txtPassengerBusColumnSeat
             // 
-            this.txtPassengerBusColumnSeat.Location = new System.Drawing.Point(227, 245);
+            this.txtPassengerBusColumnSeat.Location = new System.Drawing.Point(230, 245);
             this.txtPassengerBusColumnSeat.Name = "txtPassengerBusColumnSeat";
-            this.txtPassengerBusColumnSeat.Size = new System.Drawing.Size(145, 20);
+            this.txtPassengerBusColumnSeat.Size = new System.Drawing.Size(140, 20);
             this.txtPassengerBusColumnSeat.TabIndex = 94;
             // 
             // label2
@@ -248,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 450);
+            this.ClientSize = new System.Drawing.Size(574, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassengerBusColumnSeat);
             this.Controls.Add(this.btnAtras);
@@ -272,7 +272,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FormReserveSeat";
             this.Text = "FormReserveSeat";
-            this.Load += new System.EventHandler(this.FormReserveSeat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridReserva)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

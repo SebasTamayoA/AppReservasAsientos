@@ -8,6 +8,6 @@ namespace AppBuses
 {
     public class Driver : Person
     {
-        public string Nit { get; set; }
+
     }
 }

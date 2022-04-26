@@ -9,9 +9,9 @@ namespace AppBuses
     public class Passenger : Person
     {
         public String Seat { get; set; } // silla
-        public int Row { get; set; }
-        public int Colum { get; set; }
+        public int Row { get; set; } // fila
+        public int Colum { get; set; } // columna
         public int ReservationNumber { get; set; } // Número de reserva
-        public String BusPlate { get; set;}
+        public String BusPlate { get; set; } // Placa del bus
     }
 }

@@ -23,7 +23,7 @@ namespace AppBuses
             InitializeComponent();
             // centrar menuPrincipal
             this.CenterToScreen();
-            formCompany = new FormCompany("123", "Juan", "Cra 43 # 65 B 87", "3226549876");
+            formCompany = new FormCompany("800.199.236-6", "TuristiK", "Cra 43 # 65 B 87", "3226549876");
             formDriver = new FormDriver();
             formBus = new FormBus();
             formReserveSeat = new FormReserveSeat();
@@ -47,7 +47,7 @@ namespace AppBuses
 
         private void btnOpcionReservaAsiento_Click(object sender, EventArgs e)
         {
-            formReserveSeat.LlenarListaBuses(formBus.tc);
+            formReserveSeat.LlenarListaBuses(formBus.buses);
             formReserveSeat.Show();
         }
 

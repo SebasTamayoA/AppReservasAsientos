@@ -11,10 +11,7 @@ namespace AppBuses
         public string BusPlate { get; set; } // placa del bus
         public string BusType { get; set; } // tipo de bus 
         public int[,] BusCapacity { get; set; } // capacidad del bus como matriz de asientos
-        public int BusCapacity1 { get; set; }
-        public Driver Driver { get; set; } // conductor del bus        
-        public Passenger[] Passengers { get; set; } // array de pasajeros
-
-
+        public int BusCapacity1 { get; set; } // capacidad del bus como una sola variable
+        public Driver Driver { get; set; } // conductor del bus
     }
 }
